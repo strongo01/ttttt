@@ -1,0 +1,196 @@
+/* Resetten van standaardmarges en -vullingen voor body, h1, h2 en p */
+body, h1, h2, p:not(footer) {
+  margin: 0;
+  padding: 0;
+}
+
+/* Algemene stijlen voor de hele pagina, behalve voor #myBtn */
+body:not(#myBtn) {
+  font-family: Arial, sans-serif; /* Lettertype voor de pagina */
+  padding: 20px; /* Binnenmarges voor de pagina */
+  background-color: #ffffff; /* Achtergrondkleur */
+  background-image: linear-gradient(180deg, #afafaf 0%, #acacac 100%); /* Gradiënt met golfeffect */
+  background-size: 100% auto; /* Achtergrondafbeelding grootte */
+}
+
+h1, h2, h3, p, img, .topnav:not(footer) {
+  animation: wave 2s infinite alternate; /* Pas de duur en eigenschappen aan zoals nodig */
+}
+
+/* Stijlen voor de hoofdkop (h1) */
+h1 {
+  text-align: center; /* Tekst centreren */
+  font-size: 36px; /* Lettergrootte */
+  color: white; /* Tekstkleur */
+  margin-bottom: 20px; /* Ondermarge */
+  font-family: Arial, Helvetica, sans-serif; /* Lettertype */
+}
+
+/* Stijlen voor onderkoppen (h2) */
+h2 {
+  text-align: center; /* Tekst centreren */
+  font-size: 24px; /* Lettergrootte */
+  color: #FFFFF0; /* Tekstkleur */
+  margin-top: 20px; /* Bovenmarge */
+  margin-bottom: 10px; /* Ondermarge */
+}
+
+/* Stijlen voor alinea's (p) */
+p {
+  font-size: 18px; /* Lettergrootte */
+  color: #000000; /* Tekstkleur */
+  line-height: 1.5; /* Regelhoogte */
+  text-align: center;
+}
+
+/* Stijlen voor afbeeldingen */
+.afbeelding-stijl {
+  max-width: 70%; /* Maximale breedte */
+  height: auto; /* Automatische hoogteberekening */
+  border: 2px solid #6b6b6b; /* Randstijl en kleur */
+  margin: 20px 0; /* Buitenmarges boven en onder */
+  text-align: center; /* Tekst centreren */
+  display: block; /* Element als blok weergeven */
+  margin-left: auto; /* Automatische marge links */
+  margin-right: auto; /* Automatische marge rechts */
+}
+
+/* Stijlen voor golfclubnaam */
+.golfclubNaam {
+  font-weight: bold; /* Vetgedrukte tekst */
+  font-style: italic; /* Cursieve tekst */
+  color: #000000; /* Tekstkleur */
+  text-align: center; /* Tekst centreren */
+}
+
+/* Animatie voor golfachtig effect (wave) */
+@keyframes wave {
+  0% {
+    transform: translateY(0); /* Beginpositie van de animatie */
+  }
+  100% {
+    transform: translateY(-1px); /* Eindpositie van de animatie, pas aan voor gewenste golfhoogte */
+  }
+}
+
+/* Stijlen voor de topnavigatiebalk (topnav) */
+.topnav {
+  background-color: #333; /* Achtergrondkleur */
+  overflow: hidden; /* Verbergen van overflow */
+  height: 47px; /* Hoogte van de balk */
+  position: -webkit-sticky; /* Sticky positie voor Safari */
+  position: sticky; /* Sticky positie voor andere browsers */
+  top: 0; /* Bovenkant van de pagina */
+  z-index: 999; /* Zorg ervoor dat de topnavigatie boven alles staat */
+}
+
+/* Stijlen voor koppelingen in de navigatiebalk (topnav a) */
+.topnav a {
+  float: left; /* Links uitlijnen van koppelingen */
+  color: #f2f2f2; /* Tekstkleur */
+  text-align: center; /* Tekst centreren */
+  padding: 14px 16px; /* Binnenmarges boven en onder, binnenmarges links en rechts */
+  text-decoration: none; /* Geen onderstreping van koppelingen */
+  font-size: 17px; /* Lettergrootte */
+  font-weight: bold; /* Vetgedrukte tekst */
+}
+
+/* Stijlen voor koppelingen in de navigatiebalk bij hover (topnav a:hover) */
+.topnav a:hover {
+  background-color: #ddd; /* Achtergrondkleur bij hover */
+  color: black; /* Tekstkleur bij hover */
+}
+
+/* Stijlen voor de actieve/kopelpuntkoppeling in de navigatiebalk (topnav a.active) */
+.topnav a.active {
+  background-color: #04AA6D; /* Achtergrondkleur voor de actieve koppeling */
+  color: white; /* Tekstkleur voor de actieve koppeling */
+}
+
+/* Stijlen voor het weericoon in de navigatiebalk (topnav a.weathericon) */
+.topnav a.weathericon {
+  float: right; /* Rechts uitlijnen van het weericoon */
+  padding: 0px 0px; /* Binnenmarges voor het weericoon */
+}
+
+/* Stijlen voor het weericoon bij hover (topnav a:hover.weathericon) */
+.topnav a:hover.weathericon {
+  background-color: #535252; /* Achtergrondkleur voor het weericoon bij hover */
+}
+
+/* Stijlen voor de weertemperatuur in de navigatiebalk (weathertemperature) */
+.weathertemperature {
+  float: right; /* Rechts uitlijnen van de weertemperatuur */
+  color: #f2f2f2; /* Tekstkleur */
+  padding: 14px 16px; /* Binnenmarges boven en onder, binnenmarges links en rechts */
+  font-size: 17px; /* Lettergrootte */
+}
+
+/* Voeg deze CSS-stijlen toe voor de footer */
+footer {
+  text-align: center; /* Tekst in de footer blijft gecentreerd */
+}
+
+/* Stijlen voor de lijn */
+.footer-line {
+  border-top: 4px solid #f2f2f2;
+  width: 100%;
+}
+
+/* Stijlen voor het plaatje in de footer */
+.footer-image {
+  display: inline-block;
+  margin-right: 20px; /* Ruimte tussen plaatje en tekst */
+  vertical-align: top; /* Zet het plaatje bovenaan uitgelijnd */
+}
+
+/* Stijlen voor de tekst in de footer */
+.footer-text {
+  display: inline-block;
+  margin-right: 20px; /* Ruimte tussen tekst en hyperlinks */
+  vertical-align: top; /* Zet de tekst bovenaan uitgelijnd */
+  margin-top: 33px; /* Voeg 5px ruimte boven de tekst toe */
+}
+
+/* Stijlen voor de hyperlinks in de footer */
+.footer-links {
+  display: inline-block;
+  vertical-align: top; /* Zet de hyperlinks bovenaan uitgelijnd */
+  margin-top: 36px; /* Voeg 5px ruimte boven de hyperlinks toe */
+}
+
+/* Stijlen voor de e-mailkoppeling in de footer */
+.footer-link {
+  display: block; /* Zet de koppelingen op een nieuwe regel */
+  text-decoration: none; /* Verwijder onderstreping van de koppelingen */
+  font-size: 18px;
+  margin-bottom: 10px; /* Ruimte onder elke koppeling */
+}
+
+/* Stijlen voor de e-mailkoppeling bij hover (optioneel) */
+.footer-link:hover {
+  text-decoration: underline; /* Voeg een onderstreping toe bij hover */
+}
+
+/* Aangepaste CSS-stijlen voor de kopjes boven de tekst en hyperlinks */
+.footer-text h3, .footer-links h3 {
+  font-size: 18px; /* Lettergrootte van de kopjes */
+  margin: 0; /* Verwijder standaard marges van de kopjes */
+}
+
+/* Aangepaste CSS voor de tekst en hyperlinks */
+.footer-text p, .footer-links a {
+  font-size: 16px; /* Lettergrootte van de tekst en koppelingen */
+  margin: 5px 0; /* Voeg 5px boven- en ondermarge toe */
+}
+
+/* Stijlen voor de lijn (optioneel) */
+.footer-line {
+  border-top: 4px solid #f2f2f2;
+  width: 100%;
+}
+
+iframe {
+  align-items: center;
+  align-content: center;
+}

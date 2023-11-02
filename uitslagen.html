@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Alles over golf</title>
+    <link rel="stylesheet" href="css/uitslagenopmaak.css">
+    <script src="java/weather.js"></script>
+    <!-- Koppel een externe stylesheet voor aanvullende stijlen -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <!-- Bovenste navigatiebalk -->
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="inschrijfpagina.html">Inschrijving</a>
+        <a href="news.html">Nieuws</a>
+        <a href="contact.html">Contact</a>
+        <a href="spelregels.html">Spelregels</a>
+        <a class="active" href="uitslagen.html">Uitslagen</a>
+        
+        <span id="temperature" class="weathertemperature"></span>
+        <a class="weathericon" href="https://openweathermap.org/city/2745912" target="_blank"><img src="" id="image" title="" alt=""/></a>
+    </div>
+    <br>
+
+    <!-- Knop voor snel scrollen naar de top van de pagina -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+    <!-- Voeg het JavaScript-bestand toe voor de knop voor snel scrollen -->
+    <script src="java/topbutton.js"></script>
+
+    <h1>Uitslagen van The Open Championship</h1>
+
+    <table id="uitslagen">
+      <tr>
+        <th>Speler</th>
+        <th>Par</th>
+        <th>Totaal</th>
+      </tr>
+      <tr>
+        <td>Harman B.</td>
+        <td>-13</td>
+        <td>271</td>
+      </tr>
+      <tr>
+        <td>Day J.</td>
+        <td>-7</td>
+        <td>277</td>
+      </tr>
+      <tr>
+        <td>Kim T.</td>
+        <td>-7</td>
+        <td>277</td>
+      </tr>
+      <tr>
+        <td>Rahm J.</td>
+        <td>-7</td>
+        <td>277</td>
+      </tr>
+      <tr>
+        <td>Straka S.</td>
+        <td>-7</td>
+        <td>277</td>
+      </tr>
+      <tr>
+        <td>Grillo E.</td>
+        <td>-6</td>
+        <td>278</td>
+      </tr>
+      <tr>
+        <td>Mcllroy R.</td>
+        <td>-6</td>
+        <td>278</td>
+      </tr>
+      <tr>
+        <td>Sharma S.</td>
+        <td>-5</td>
+        <td>279</td>
+      </tr>
+      <tr>
+        <td>Young C.</td>
+        <td>-5</td>
+        <td>279</td>
+      </tr>
+      <tr>
+        <td>Fleetwoord T.</td>
+        <td>-4</td>
+        <td>280</td>
+      </tr>
+    </table>
+
+</body>
+<br>
+<br>
+<footer>
+    <div class="footer-line"></div>
+    <br>
+    <div class="footer-content">
+      <div class="footer-image">
+        <img src="images/Logo.png" alt="Logo" width="100px" height="auto">
+      </div>
+      <div class="footer-text">
+        <h3 class="footerkopjes">Auteurs</h3>
+        <p>Max Veldhuis en Colin Prijs</p>
+      </div>
+      <div class="footer-links">
+        <h3 class="footerkopjes">Contacteer de auteurs</h3>
+        <a class="footer-link" href="mailto:214321@lrc.nl,214291@lrc.nl">E-mail de auteurs van de website</a>
+      </div>
+    </div>
+</footer>
+</html>

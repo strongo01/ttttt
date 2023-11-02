@@ -1,0 +1,201 @@
+/* Algemene stijlreset voor body, kopteksten en alinea's */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Algemene stijl voor de body van de pagina */
+body:not(#myBtn) {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* Achtergrondkleur */
+  background-image: linear-gradient(180deg, #afafaf 0%, #acacac 100%); /* Gradiënt met golfeffect */
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Stijl voor de container van het formulier */
+.container {
+  background-color: #fff;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stijl voor de hoofdkop (h1) */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Stijl voor het formulier zelf */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Stijl voor de labels van invoervelden */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Algemene stijl voor tekstinvoervelden */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="bericht"],
+input[type="number"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Stijl voor de verzendknop */
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Stijl voor de verzendknop bij hover */
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Stijl voor het tekstgebied (bericht) */
+#bericht {
+  max-width: 94.5%;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  max-height: 200px; /* Stel hier de maximale hoogte in die je wilt */
+  overflow-y: auto; /* Voeg een verticale scrollbar toe als dat nodig is */
+  resize: vertical;
+}
+
+/* Stijl voor de navigatiebalk bovenaan de pagina */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  height: 47px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 999; /* Zorg ervoor dat de topnavigatie boven alles staat */
+}
+
+/* Stijl voor de links in de navigatiebalk */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* Stijl voor links bij hover (muis erover) */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Stijl voor de actieve/huidige link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Stijl voor het weericoon (rechts uitgelijnd) */
+.topnav a.weathericon {
+  float: right;
+  padding: 0px 0px;
+}
+
+/* Stijl voor het weericoon bij hover */
+.topnav a:hover.weathericon {
+  background-color: #535252;
+}
+
+/* Stijl voor de temperatuur (rechts uitgelijnd) */
+.weathertemperature {
+  float: right;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+/* Voeg deze CSS-stijlen toe voor de footer */
+footer {
+  text-align: center; /* Tekst in de footer blijft gecentreerd */
+}
+
+/* Stijlen voor de lijn */
+.footer-line {
+  border-top: 4px solid #f2f2f2;
+  width: 100%;
+}
+
+/* Stijlen voor het plaatje in de footer */
+.footer-image {
+  display: inline-block;
+  margin-right: 20px; /* Ruimte tussen plaatje en tekst */
+  vertical-align: top; /* Zet het plaatje bovenaan uitgelijnd */
+}
+
+/* Stijlen voor de tekst in de footer */
+.footer-text {
+  display: inline-block;
+  margin-right: 20px; /* Ruimte tussen tekst en hyperlinks */
+  vertical-align: top; /* Zet de tekst bovenaan uitgelijnd */
+  margin-top: 33px; /* Voeg 5px ruimte boven de tekst toe */
+}
+
+/* Stijlen voor de hyperlinks in de footer */
+.footer-links {
+  display: inline-block;
+  vertical-align: top; /* Zet de hyperlinks bovenaan uitgelijnd */
+  margin-top: 36px; /* Voeg 5px ruimte boven de hyperlinks toe */
+}
+
+/* Stijlen voor de e-mailkoppeling in de footer */
+.footer-link {
+  display: block; /* Zet de koppelingen op een nieuwe regel */
+  text-decoration: none; /* Verwijder onderstreping van de koppelingen */
+  font-size: 18px;
+  margin-bottom: 10px; /* Ruimte onder elke koppeling */
+}
+
+/* Stijlen voor de e-mailkoppeling bij hover (optioneel) */
+.footer-link:hover {
+  text-decoration: underline; /* Voeg een onderstreping toe bij hover */
+}
+
+/* Aangepaste CSS-stijlen voor de kopjes boven de tekst en hyperlinks */
+.footer-text h3, .footer-links h3 {
+  font-size: 18px; /* Lettergrootte van de kopjes */
+  margin: 0; /* Verwijder standaard marges van de kopjes */
+}
+
+/* Aangepaste CSS voor de tekst en hyperlinks */
+.footer-text p, .footer-links a {
+  font-size: 16px; /* Lettergrootte van de tekst en koppelingen */
+  margin: 5px 0; /* Voeg 5px boven- en ondermarge toe */
+}
+
+/* Stijlen voor de lijn (optioneel) */
+.footer-line {
+  border-top: 4px solid #f2f2f2;
+  width: 100%;
+}

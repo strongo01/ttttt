@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Alles over golf</title>
+    <!-- Koppel de stylesheet voor de algemene opmaak van de pagina -->
+    <link rel="stylesheet" href="css/opmaak.css">
+    <!-- Voeg het JavaScript-bestand voor weerinformatie toe -->
+    <script src="java/weather.js"></script>
+    <!-- Koppel een externe stylesheet voor aanvullende stijlen -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigatiebalk bovenaan de pagina -->
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="inschrijfpagina.html">Inschrijving</a>
+        <a href="news.html">Nieuws</a>
+        <a href="contact.html">Contact</a>
+        <a href="spelregels.html">Spelregels</a>
+        <a href="uitslagen.html">Uitslagen</a>
+        <!-- Element voor weerinformatie -->
+        <span id="temperature" class="weathertemperature"></span>
+        <!-- Weericoon met koppeling naar een externe website -->
+        <a class="weathericon" href="https://openweathermap.org/city/2745912" target="_blank"><img src="" id="image" title="" alt=""/></a>         
+    </div>
+    <!--<img src="images/Logo.png" width="47" height="auto" alt="Logo">-->
+    <br>
+    
+
+    <!-- Knop voor snel scrollen naar de top van de pagina -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+    <!-- Voeg het JavaScript-bestand toe voor de knop voor snel scrollen -->
+    <script src="java/topbutton.js"></script>
+
+    <!-- Hoofdkop (h1) -->
+    <h1>Golfing Utrecht</h1>
+
+    <br>
+    <!-- Afbeelding van een golfbal op gras -->
+    <img class="afbeelding-stijl" alt="Plaatje van golfbal op het gras" src="images/golfPlaatje.jpeg" height="400" width="auto">
+    <br>
+    <!-- Ondertitel (h2) - Waarom golf? -->
+    <h2><strong>Waarom golf?</strong></h2>
+    <p>
+        <!-- Paragraaf met tekst over golf -->
+        Veel mensen associëren golf met een saaie oude-rijke mannensport. Dit is ver van de realiteit en wij van
+        Golfclub Utrecht hebben als doel om Utrecht te laten zien dat golfen voor jong en oud leuk kan zijn.
+    </p>
+
+    <!-- Ondertitel (h2) - Hoe kunt u zich inschrijven? -->
+    <h2><strong>Hoe kunt u zich inschrijven?</strong></h2>
+    <p>
+        <!-- Paragraaf met tekst over inschrijven bij Golfclub de Meern -->
+        U kunt zich inschrijven bij <span class="golfclubNaam">Golfclub de Meern</span> via <a href="inschrijfpagina.html">deze link</a>.
+    </p>  
+    <br>
+
+    <!-- Ondertitel (h2) - Hoe kunt u zich inschrijven? -->
+    <h2><strong>Hoe speel je golf?</strong></h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/99nN7WWNF1Q?si=gzYCZvRW7q5-nzDQ" title="YouTube video player"
+     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+    <br>
+
+    <footer>
+        <div class="footer-line"></div>
+        <br>
+        <div class="footer-content">
+          <div class="footer-image">
+            <img src="images/Logo.png" alt="Logo" width="100px" height="auto">
+          </div>
+          <div class="footer-text">
+            <h3>Auteurs</h3>
+            <p>Max Veldhuis en Colin Prijs</p>
+            <a href="oefenwebsite.html">test</a>
+          </div>
+          <div class="footer-links">
+            <h3>Contacteer de auteurs</h3>
+            <a class="footer-link" href="mailto:214321@lrc.nl,214291@lrc.nl">E-mail de auteurs van de website</a>
+          </div>
+        </div>
+    </footer>
+    <br> <!-- Extra witruimte toevoegen -->
+</body>
+</html>

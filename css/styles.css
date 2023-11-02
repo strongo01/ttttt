@@ -1,0 +1,26 @@
+/* Stijl voor de knop om naar de top van de pagina te scrollen (#myBtn) */
+#myBtn {
+    display: none; /* Standaard verborgen */
+    position: fixed; /* Vaste/sticky positie */
+    bottom: 20px; /* Plaats de knop onderaan de pagina op 20px van de bodem */
+    right: 30px; /* Plaats de knop 30px vanaf de rechterkant */
+    z-index: 99; /* Zorg ervoor dat de knop niet overlapt met andere elementen */
+    border: none; /* Verwijder randen */
+    outline: none; /* Verwijder de focusrand */
+    background-color: #2ea7f8; /* Stel een achtergrondkleur in */
+    color: white; /* Tekstkleur */
+    cursor: pointer; /* Voeg een muiscursor toe bij hover */
+    width: 50px; /* Stel de breedte en hoogte in om de knop rond te maken */
+    height: 50px;
+    border-radius: 50%; /* Afgeronde vorm om de knop rond te maken */
+    font-size: 36px; /* Verhoog de lettergrootte voor een grotere pijl (^) */
+    text-align: center;
+    line-height: 50px; /* Verticaal het pijltje (^) centreren */
+}
+
+/* Stijl voor het pseudo-element (::before) van #myBtn om een pijl (^) toe te voegen */
+#myBtn::before {
+    content: "^"; /* Voeg de pijl (^) toe met een pseudo-element */
+    position: relative;
+    top: 5px; /* Pas deze waarde aan voor precieze centrering */
+}

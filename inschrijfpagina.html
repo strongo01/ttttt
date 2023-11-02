@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulieren.css">
+    <title>Inschrijfformulier Golfclub</title>
+    <script src="java/weather.js"></script>
+    <!-- Koppel een externe stylesheet voor aanvullende stijlen -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <!-- Bovenste navigatiebalk -->
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="inschrijfpagina.html">Inschrijving</a>
+        <a href="news.html">Nieuws</a>
+        <a href="contact.html">Contact</a>
+        <a href="spelregels.html">Spelregels</a>
+        <a href="uitslagen.html">Uitslagen</a>
+        
+        <span id="temperature" class="weathertemperature"></span>
+        <a class="weathericon" href="https://openweathermap.org/city/2745912" target="_blank"><img src="" id="image" title="" alt=""/></a>         
+    </div>
+
+    <!-- Knop voor snel scrollen naar de top van de pagina -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+    <!-- Voeg het JavaScript-bestand toe voor de knop voor snel scrollen -->
+    <script src="java/topbutton.js"></script>
+    <br>
+    <br>
+    <!-- Formuliercontainer -->
+    <div class="container">
+        <h1>Inschrijfformulier Golfclub</h1>
+        <!-- Inschrijfformulier -->
+        <form action="php/inschrijven.php" method="post">
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam" required>
+            
+            <label for="email">E-mailadres:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telefoon">Telefoonnummer:</label>
+            <input type="tel" id="telefoon" name="telefoon" required>
+            
+            <label for="geboortedatum">Geboortedatum:</label>
+            <input type="date" id="geboortedatum" name="geboortedatum" required>
+            
+            <label for="handicap">Handicap:</label>
+            <input type="number" id="handicap" name="handicap" min="0" required>
+            
+            <label for="ervaring">Ervaring (jaren):</label>
+            <input type="number" id="ervaring" name="ervaring" min="0" required>
+            
+            <input type="submit" value="Inschrijven">
+        </form>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <div class="footer-line"></div>
+        <br>
+        <div class="footer-content">
+          <div class="footer-image">
+            <img src="images/Logo.png" alt="Logo" width="100px" height="auto">
+          </div>
+          <div class="footer-text">
+            <h3>Auteurs</h3>
+            <p>Max Veldhuis en Colin Prijs</p>
+          </div>
+          <div class="footer-links">
+            <h3>Contacteer de auteurs</h3>
+            <a class="footer-link" href="mailto:214321@lrc.nl,214291@lrc.nl">E-mail de auteurs van de website</a>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>
